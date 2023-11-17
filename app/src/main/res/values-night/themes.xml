@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme for dark mode (Material Design) -->
+    <style name="AppTheme.Dark" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary branding color for the app -->
+        <item name="colorPrimary">@color/green</item>
+        <!-- Secondary color for the app -->
+        <item name="colorSecondary">#7CB342</item>
+
+        <!-- Text color for the primary background content -->
+        <item name="android:textColorPrimary">@color/green</item>
+        <!-- Background color for the app -->
+        <item name="android:windowBackground">@color/green</item>
+
+        <!-- Background color for the action bar -->
+        <item name="android:colorBackground">@color/green</item>
+    </style>
+</resources>

@@ -1,0 +1,27 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'macos-latest'
+
+jobs:
+- job: Build
+  displayName: 'Build job'
+  steps:
+  - task: Gradle@2
+    inputs:
+      workingDirectory: ''
+      gradleWrapperFile: 'gradlew.bat'
+      gradleOptions: '-Xmx2048m -Dfile.encoding=UTF-8'
+      publishJUnitResults: true
+      tasks: 'assembleDebug'
+
+  - script: |
+      cat gradle/wrapper/gradle-wrapper.properties
+    displayName: 'Print Gradle Wrapper Properties'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      artifactName: 'drop'
+      publishLocation: 'Container'

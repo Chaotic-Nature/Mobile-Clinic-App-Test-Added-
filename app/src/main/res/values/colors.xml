@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary color for your app -->
+    <color name="green">#2E7D32</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#5A6E5B</color>
+    <color name="light_green">#8BFF90</color>
+    <color name="light_red">#D32F2F</color>
+
+</resources>
